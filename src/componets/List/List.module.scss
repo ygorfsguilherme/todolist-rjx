@@ -20,13 +20,8 @@
     }
 
     &::after {
-      content: url('../../assets/check.svg') ;
+      content: url("../../assets/check.svg");
     }
-  }
-
-  .ativo {
-    background: #005915;
-    color: #fff;
   }
 
   li {
@@ -51,6 +46,16 @@
         transform: scale(1.2);
       }
     }
+  }
+
+  .tarefa__check {
+    background-color: #6c757d;
+    color: rgb(212, 212, 212);
+  }
+
+  .ativo {
+    background: #005915;
+    color: #fff;
   }
 }
 

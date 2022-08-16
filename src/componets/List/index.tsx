@@ -1,7 +1,6 @@
 import styles from "./List.module.scss";
 import iconExcluir from "../../assets/trash.svg";
 import { Item } from "type/Item";
-
 import classNames from "classnames";
 
 export function List({
@@ -29,7 +28,7 @@ export function List({
   return (
     <ul className={styles.list}>
       {Item.map((item) => (
-        <li id={item.id} key={item.id}>
+        <li className={classNames(item.checked ? styles.tarefa__check : "")} id={item.id} key={item.id}>
           {item.tarefa}
 
           <div className={styles.container__check}>
