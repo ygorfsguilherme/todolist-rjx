@@ -1,0 +1,59 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  padding: 0;
+  margin: 0;
+
+  .check {
+    height: 30px;
+    width: 30px;
+    background-color: gray;
+    border-radius: 50%;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &::after {
+      content: url('../../assets/check.svg') ;
+    }
+  }
+
+  .ativo {
+    background: #005915;
+    color: #fff;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+    background: #ebfbff;
+    margin: 5px;
+    padding: 10px;
+    list-style: none;
+    box-sizing: border-box;
+    color: #7b7f91;
+    cursor: default;
+    justify-content: space-between;
+
+    img {
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+.container__check {
+  display: flex;
+  height: 90%;
+  width: 70px;
+  justify-content: space-between;
+}
