@@ -5,7 +5,7 @@ import { List } from "componets/List";
 import { useState } from "react";
 import { Item } from "type/Item";
 import { v4 as uuidv4 } from "uuid";
-import "./App.css";
+import "./App.scss";
 
 
 function App() {
@@ -19,16 +19,16 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <div className="App-header">
-        <div>Minha Simple Lista</div>
+    <div className="app">
+      <div className="app__container">
+        <div>TodoList RJX</div>
 
-        <Label Text={"Tarefas"} />
-
-        <div className="container">
+        <div className="app__container__add">
           <Input Valor={Valor} setValor={setValor} />
           <Button onClick={pegaPalavra}>+</Button>
         </div>
+
+        <Label Text={"Tarefas"} />
 
         <List Item={Item} setItem={setItem} />
       </div>
